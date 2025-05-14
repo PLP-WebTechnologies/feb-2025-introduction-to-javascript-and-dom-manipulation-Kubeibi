@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BSF Farm ERP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #388e3c;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .buttons {
+      text-align: center;
+      margin: 20px;
+    }
+    .dynamic-box {
+      background: #4caf50;
+      color: white;
+      padding: 15px;
+      margin: 10px auto;
+      width: 90%;
+      text-align: center;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">BSF Farm ERP Dashboard</h1>
+    <p>Manage production and resources efficiently</p>
+  </header>
+
+  <nav>
+    <a href="#">Production</a>
+    <a href="#">Inventory</a>
+    <a href="#">Sales</a>
+    <a href="#">Employees</a>
+  </nav>
+
+  <div class="buttons">
+    <button id="change-style-btn">Change Title Style</button>
+    <button id="toggle-box-btn">Toggle Info Box</button>
+  </div>
+
+  <div class="dashboard">
+    <div class="card">
+      <h3>Production</h3>
+      <p>Larvae today: 20kg</p>
+    </div>
+    <div class="card">
+      <h3>Inventory</h3>
+      <p>Feedstock: 200kg</p>
+    </div>
+    <div class="card">
+      <h3>Sales</h3>
+      <p>Orders pending: 3</p>
+    </div>
+  </div>
+
+  <div id="info-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
